@@ -1,0 +1,86 @@
+?? gefüllte Polygone stören
+Das Freirechnen von Polygonen wird mit dem RATSNEST -Befehl ausgelöst. Man kann das mit SET POLYGON_RATSNEST OFF; verhindern. 
+
+?? snap to Grid:
+- gewüschtes Grid einstellen, erst STRG-Taste drücken, dann Bauteil anwählen. -> Bauteil schnappt sofort aufs Grid
+
+?? Value ist weg:
+- Auch den Name löschen - dann sind beide wieder da
+- oder: rechte Maus unsmash
+
+?? Eagle stürzt ab
+- Options: always use vector Fonts
+
+?? Vektorfont fixieren
+   ->Optionen ->Benutzeroberfläche... ->Immer Vektorschrift + In diese Zeichnung einprägen
+
+?? Blatt löschen
+- z.B. Blatt 3 eines Sheets:   remove .s3
+
+?? Pad sind zu groß / zu klein
+- ->DRC ->Restring
+
+?? Flächen, ohne daß DRC mault
+- Polygon zeichen (wird erst durch Ratsnest gefüllt)
+- Polygon mit Leiterbahn verbinden
+- Polygon den Namen der Leiterbahn geben
+- falls Polygon mystisch verschwindet: Eagle neu starten
+
+?? Polygone verschwinden, nachdem sie den Namen einer Leiterbahn erhalten haben
+- Polygone lassen sich nicht über Leiterbahnen ohne Abzweig legen
+
+?? Bauteile sind nicht auf dem Grid - alle automatisch auf Grig legen
+- Grid auf "finest" schalten
+- cmd_snap_board.ulp laufen lassen
+
+?? Bauteile sind nicht auf dem Grid - einzeln auf Grig legen
+- während des MOVE-Befehls Strg-Taste drücken
+
+?? Layout aus EAGLE Version 3.02 in neue Versionen bekommen
+
+Beste Methode: über PLT-Datei
+- In der Dos-Umgebung den CAM-Prozessor starten: EAGLE -XI
+- Gewünschte Layer als HPLG exportieren
+- Das VB-Programm DXF 3.0 starten. Hier wird ein Eegle-Script erzeugt.
+- PLT-Datei öffnen
+	Einstellung: 100 DXF-Einheiten = 2.5 SCR-Einheiten
+
+
+Andere Methode: über DXF-Datei (Umweg über Coreldraw leider nicht maßhaltig)
+- In der Dos-Umgebung den CAM-Prozessor starten: EAGLE -XI
+- Gewünschte Layer als HPLG exportieren
+- Plot-Dateien in Corel-Draw einlesen
+- Das VB-Programm DXF 3.0 starten. Hier wird ein Eegle-Script erzeugt.
+	Einstellung: 1 DXF-Einheiten = 25,8071 SCR-Einheiten
+
+Laenge in Eagle302:	3"		3" * 1016 = 3048
+Länge in .PLT:		3048 Inchr	3048 / 40 = 76,2
+Länge in .CDR:		75,006 mm	76,2 / 25,4 = 3
+
+Aus irgend einem Grund rechnet CorelDraw falsch (statt 76,2 -> 75,006)
+
+?? kurz mal auf ein kleineres Raster umschalten
+- während des MOVE-Befehls ATL-Taste drücken
+
+?? Device, Symbol, Package von einer Bibliothek in eine andere kopieren
+	- Eagle Control Panel öffnen
+	- Zielbibliothek öffnen
+	- Im Verzeinisbaum (links) das gewünschte Element auswählen
+	- einfach in das Fenster der geöffneten Zielbibliothek ziehen
+	
+	WICHTIG!
+	- Symbole gleichen Namens werden nicht dupliziert, wenn sie wirklich gleich sind
+	- Bei unterschiedlichen Symbolne gleichen Namens wird "-1" an den Namen angehängt
+	
+?? Bauteile in Bibliotheken löschen und umbenennen
+	- Befehle: remove und rename in der Komandozeile.
+	
+
+
+
+
+
+
+
+
+

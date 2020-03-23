@@ -1,0 +1,23 @@
+
+Prozessor: ATMega 4809
+
+
+=== ToDo ===
+- Welche Pins vom Atmel verwenden?
+- Sicherung 12V
+- Phönix-Stecker raussuchen
+
+https://botland.com.pl/en/arduino-nano-series-original-tiles/14760-arduino-nano-every-module-abx00028-7630049201477.html
+
+
+
+
+
+
+
+
+
+
+
+
+
