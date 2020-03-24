@@ -9,6 +9,28 @@ Prozessor: ATMega 4809
 
 https://botland.com.pl/en/arduino-nano-series-original-tiles/14760-arduino-nano-every-module-abx00028-7630049201477.html
 
+Stückliste:
+- RS
+
+- Bürklin
+
+
+- Farnell
+
+
+- Reichelt
+
+Artikel-Nr.: MW LDD-600H			MW LDD-600H LED-Trafo, 9 - 56 V, 600 mA
+
+- Völkner
+
+
+
+
+
+
+
+
 
 
 
