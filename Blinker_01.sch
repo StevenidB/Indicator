@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -230,6 +230,12 @@ bequeme Weise die noch nicht definierten Attribute zu generieren.</description>
 <text x="2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="0" visible="off" length="middle" direction="sup" rot="R270"/>
 </symbol>
+<symbol name="+5V">
+<wire x1="-1.27" y1="-2.54" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="+5V" x="0" y="0" visible="off" length="middle" direction="sup" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TP_10">
@@ -262,6 +268,18 @@ bequeme Weise die noch nicht definierten Attribute zu generieren.</description>
 <deviceset name="GND" uservalue="yes">
 <gates>
 <gate name="1" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+5V" uservalue="yes">
+<gates>
+<gate name="1" symbol="+5V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -731,6 +749,60 @@ Based on the previous libraries:
 </deviceset>
 </devicesets>
 </library>
+<library name="LED">
+<packages>
+<package name="THT3MM">
+<pad name="A" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
+<pad name="K" x="1.27" y="0" drill="0.8128" shape="octagon"/>
+<text x="-2" y="3" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2" y="-4" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="2.2" y1="1.2" x2="2.2" y2="-1.2" width="0.1" layer="21" curve="302.779081"/>
+<wire x1="2.2" y1="1.2" x2="2.2" y2="-1.2" width="0.1" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="LED1206GRÜN">
+<wire x1="0" y1="1.27" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-1.27" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="1.27" x2="3.175" y2="2.54" width="0.127" layer="94"/>
+<wire x1="3.175" y1="2.54" x2="3.175" y2="1.905" width="0.127" layer="94"/>
+<wire x1="3.175" y1="2.54" x2="2.54" y2="2.54" width="0.127" layer="94"/>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="2.54" width="0.127" layer="94"/>
+<wire x1="1.905" y1="2.54" x2="1.905" y2="1.905" width="0.127" layer="94"/>
+<wire x1="1.905" y1="2.54" x2="1.27" y2="2.54" width="0.127" layer="94"/>
+<text x="-5.08" y="2.794" size="1.6764" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-1.778" size="1.6764" layer="96" rot="MR180">&gt;VALUE</text>
+<text x="-5.08" y="0.635" size="1.016" layer="95">A</text>
+<text x="7.62" y="0.635" size="1.016" layer="95" rot="MR0">K</text>
+<pin name="P1A" x="-5.08" y="0" visible="off" length="middle"/>
+<pin name="P2K" x="7.62" y="0" visible="off" length="middle" rot="R180"/>
+<text x="-5.08" y="-4.318" size="1.016" layer="96" rot="MR180">&gt;MWNUMBER</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="THT3MM" prefix="D">
+<gates>
+<gate name="G$1" symbol="LED1206GRÜN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="THT3MM">
+<connects>
+<connect gate="G$1" pin="P1A" pad="A"/>
+<connect gate="G$1" pin="P2K" pad="K"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MWNUMBER" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -750,9 +822,9 @@ Based on the previous libraries:
 <part name="U$6" library="SUPPLY" deviceset="TP_10" device="&quot;"/>
 <part name="U$7" library="SUPPLY" deviceset="TP_10" device="&quot;"/>
 <part name="U$8" library="SUPPLY" deviceset="TP_10" device="&quot;"/>
-<part name="R1" library="R-C" deviceset="RESEU-10" device=""/>
-<part name="R2" library="R-C" deviceset="RESEU-10" device=""/>
-<part name="R3" library="R-C" deviceset="RESEU-10" device=""/>
+<part name="R1" library="R-C" deviceset="RESEU-10" device="" value="2,2k"/>
+<part name="R2" library="R-C" deviceset="RESEU-10" device="" value="2,2k"/>
+<part name="R3" library="R-C" deviceset="RESEU-10" device="" value="2,2k"/>
 <part name="U$11" library="SUPPLY" deviceset="GND" device=""/>
 <part name="U$12" library="SUPPLY" deviceset="GND" device=""/>
 <part name="U$13" library="SUPPLY" deviceset="GND" device=""/>
@@ -781,6 +853,11 @@ Based on the previous libraries:
 <part name="U$32" library="SUPPLY" deviceset="GND" device=""/>
 <part name="U$33" library="SUPPLY" deviceset="TP_10" device="&quot;"/>
 <part name="IC1" library="optocoupler" deviceset="ILQ620" device=""/>
+<part name="R4" library="R-C" deviceset="RESEU-10" device="" value="2,2k"/>
+<part name="D1" library="LED" deviceset="THT3MM" device=""/>
+<part name="U$34" library="SUPPLY" deviceset="TP_10" device="&quot;"/>
+<part name="U$35" library="SUPPLY" deviceset="+5V" device=""/>
+<part name="U$36" library="SUPPLY" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -845,6 +922,11 @@ Based on the previous libraries:
 <instance part="IC1" gate="B" x="91.44" y="93.98"/>
 <instance part="IC1" gate="C" x="91.44" y="73.66"/>
 <instance part="IC1" gate="D" x="91.44" y="50.8"/>
+<instance part="R4" gate="1" x="106.68" y="132.08" rot="R90"/>
+<instance part="D1" gate="G$1" x="106.68" y="121.92" rot="R270"/>
+<instance part="U$34" gate="G$1" x="134.62" y="144.78" rot="R180"/>
+<instance part="U$35" gate="1" x="134.62" y="147.32" rot="R180"/>
+<instance part="U$36" gate="1" x="106.68" y="137.16" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -940,8 +1022,11 @@ Based on the previous libraries:
 <net name="N$2" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="TP_13"/>
-<wire x1="104.14" y1="114.3" x2="127" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="114.3" x2="106.68" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="A" pin="C"/>
+<pinref part="D1" gate="G$1" pin="P2K"/>
+<wire x1="106.68" y1="114.3" x2="127" y2="114.3" width="0.1524" layer="91"/>
+<junction x="106.68" y="114.3"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -1080,6 +1165,22 @@ Based on the previous libraries:
 <segment>
 <pinref part="U$33" gate="G$1" pin="TP_13"/>
 <pinref part="IC1" gate="D" pin="AC1"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="D1" gate="G$1" pin="P1A"/>
+<pinref part="R4" gate="1" pin="1"/>
+</segment>
+</net>
+<net name="+5V" class="0">
+<segment>
+<pinref part="U$34" gate="G$1" pin="TP_13"/>
+<pinref part="U$35" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="R4" gate="1" pin="2"/>
+<pinref part="U$36" gate="1" pin="+5V"/>
 </segment>
 </net>
 </nets>

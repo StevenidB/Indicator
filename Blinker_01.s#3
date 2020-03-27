@@ -1464,6 +1464,10 @@ bequeme Weise die noch nicht definierten Attribute zu generieren.</description>
 <sheets>
 <sheet>
 <plain>
+<wire x1="124.46" y1="142.24" x2="167.64" y2="142.24" width="0.1524" layer="94"/>
+<wire x1="167.64" y1="142.24" x2="167.64" y2="81.28" width="0.1524" layer="94"/>
+<wire x1="167.64" y1="81.28" x2="124.46" y2="81.28" width="0.1524" layer="94"/>
+<wire x1="124.46" y1="81.28" x2="124.46" y2="142.24" width="0.1524" layer="94"/>
 </plain>
 <instances>
 <instance part="RAHMEN1" gate="1" x="0" y="0"/>

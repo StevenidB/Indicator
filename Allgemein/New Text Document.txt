@@ -1,6 +1,14 @@
 
 Prozessor: ATMega 4809
 
+=== LEDs ===
+Rücklicht: 4 Strips a 6 LEDs   Jeder Strip zieht 0.1 A   insg. 0.4 A = 4,8W
+Bremslicht: 4 Strips a 6 LEDs  Jeder Strip zieht 0.1 A   insg. 0.4 A = 4,8W
+Blinker: 2 Strips a 6 LEDs     Jeder Strip zieht 0.1 A   insg. 0.2 A = 2,4W
+                                                         insg. 0.2 A = 2,4W
+														 ------------------
+														              14,4W
+
 
 === ToDo ===
 - Welche Pins vom Atmel verwenden?
