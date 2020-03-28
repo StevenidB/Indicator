@@ -886,14 +886,14 @@ Based on the previous libraries:
 <instance part="IC1" gate="C" x="99.06" y="38.1"/>
 <instance part="IC1" gate="D" x="142.24" y="38.1"/>
 <instance part="R4" gate="1" x="76.2" y="104.14" rot="R90"/>
-<instance part="D1" gate="G$1" x="76.2" y="93.98" rot="R270"/>
+<instance part="D1" gate="G$1" x="111.76" y="50.8" rot="R270"/>
 <instance part="U$34" gate="G$1" x="134.62" y="144.78" rot="R180"/>
 <instance part="U$35" gate="1" x="134.62" y="147.32" rot="R180"/>
 <instance part="U$36" gate="1" x="76.2" y="109.22" rot="R180"/>
 <instance part="X1" gate="-1" x="35.56" y="81.28"/>
 <instance part="X1" gate="-2" x="53.34" y="60.96"/>
 <instance part="X1" gate="-3" x="73.66" y="40.64"/>
-<instance part="X1" gate="-4" x="43.18" y="154.94" rot="R180"/>
+<instance part="X1" gate="-4" x="101.6" y="129.54" rot="R180"/>
 <instance part="X1" gate="-5" x="91.44" y="129.54"/>
 <instance part="X1" gate="-6" x="213.36" y="76.2" rot="R180"/>
 <instance part="X1" gate="-7" x="213.36" y="71.12" rot="R180"/>
@@ -903,7 +903,7 @@ Based on the previous libraries:
 <instance part="X1" gate="-11" x="213.36" y="114.3" rot="R180"/>
 <instance part="X1" gate="-12" x="213.36" y="109.22" rot="R180"/>
 <instance part="D2" gate="G$1" x="91.44" y="71.12" rot="R270"/>
-<instance part="D3" gate="G$1" x="111.76" y="50.8" rot="R270"/>
+<instance part="D3" gate="G$1" x="76.2" y="93.98" rot="R270"/>
 <instance part="R5" gate="1" x="91.44" y="81.28" rot="R90"/>
 <instance part="U$37" gate="1" x="91.44" y="86.36" rot="R180"/>
 <instance part="U$38" gate="1" x="111.76" y="66.04" rot="R180"/>
@@ -952,6 +952,9 @@ Based on the previous libraries:
 <segment>
 <pinref part="X1" gate="-5" pin="1"/>
 <pinref part="U$32" gate="1" pin="GND"/>
+<pinref part="X1" gate="-4" pin="1"/>
+<junction x="96.52" y="129.54"/>
+<pinref part="X1" gate="-4" pin="1"/>
 </segment>
 <segment>
 <pinref part="U$10" gate="G$1" pin="-VIN"/>
@@ -1083,12 +1086,6 @@ Based on the previous libraries:
 <pinref part="IC1" gate="D" pin="AC1"/>
 </segment>
 </net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="D1" gate="G$1" pin="P1A"/>
-<pinref part="R4" gate="1" pin="1"/>
-</segment>
-</net>
 <net name="+5V" class="0">
 <segment>
 <pinref part="U$34" gate="G$1" pin="TP_13"/>
@@ -1117,12 +1114,6 @@ Based on the previous libraries:
 <segment>
 <pinref part="D2" gate="G$1" pin="P1A"/>
 <pinref part="R5" gate="1" pin="1"/>
-</segment>
-</net>
-<net name="N$20" class="0">
-<segment>
-<pinref part="D3" gate="G$1" pin="P1A"/>
-<pinref part="R6" gate="1" pin="1"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -1160,6 +1151,9 @@ Based on the previous libraries:
 <pinref part="IC1" gate="A" pin="C"/>
 <pinref part="U$4" gate="G$1" pin="TP_13"/>
 <wire x1="127" y1="114.3" x2="73.66" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="81.28" x2="76.2" y2="86.36" width="0.1524" layer="91"/>
+<junction x="73.66" y="81.28"/>
+<pinref part="D3" gate="G$1" pin="P2K"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -1167,13 +1161,31 @@ Based on the previous libraries:
 <pinref part="IC1" gate="B" pin="C"/>
 <pinref part="U$5" gate="G$1" pin="TP_13"/>
 <wire x1="127" y1="109.22" x2="91.44" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="D2" gate="G$1" pin="P2K"/>
+<wire x1="91.44" y1="60.96" x2="91.44" y2="63.5" width="0.1524" layer="91"/>
+<junction x="91.44" y="60.96"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="IC1" gate="C" pin="C"/>
 <pinref part="U$6" gate="G$1" pin="TP_13"/>
-<wire x1="127" y1="104.14" x2="111.76" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="127" y1="104.14" x2="111.76" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="P2K"/>
+<junction x="111.76" y="43.18"/>
+<wire x1="111.76" y1="43.18" x2="111.76" y2="40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="R4" gate="1" pin="1"/>
+<pinref part="D3" gate="G$1" pin="P1A"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="R6" gate="1" pin="1"/>
+<pinref part="D1" gate="G$1" pin="P1A"/>
 </segment>
 </net>
 </nets>
