@@ -15,6 +15,14 @@ Blinker: 2 Strips a 6 LEDs     Jeder Strip zieht 0.1 A   insg. 0.2 A = 2,4W
 - Sicherung 12V
 - Phönix-Stecker raussuchen
 
+- Alle Arduino Pins auf die Platine führen
+- Dicke Versorgung
+- Stimmen die Löcher vom LED-Treiber?
+- Abstand Optokoppler - Arduino?
+ 
+
+
+
 https://botland.com.pl/en/arduino-nano-series-original-tiles/14760-arduino-nano-every-module-abx00028-7630049201477.html
 
 Stückliste:
