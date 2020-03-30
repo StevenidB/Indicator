@@ -809,9 +809,9 @@ Based on the previous libraries:
 <part name="U$18" library="SUPPLY" deviceset="GND" device=""/>
 <part name="+12V" library="SUPPLY" deviceset="+12V" device=""/>
 <part name="U$20" library="SUPPLY" deviceset="+12V" device=""/>
-<part name="LED_DRIVER_2" library="SPEZIAL" deviceset="LDD-H" device=""/>
-<part name="LED_DRIVER_1" library="SPEZIAL" deviceset="LDD-H" device=""/>
-<part name="LED_DRIVER_3" library="SPEZIAL" deviceset="LDD-H" device=""/>
+<part name="TREIBER_2" library="SPEZIAL" deviceset="LDD-H" device=""/>
+<part name="TREIBER_1" library="SPEZIAL" deviceset="LDD-H" device=""/>
+<part name="TREIBER_3" library="SPEZIAL" deviceset="LDD-H" device=""/>
 <part name="U$22" library="SUPPLY" deviceset="+12V" device=""/>
 <part name="U$23" library="SUPPLY" deviceset="+12V" device=""/>
 <part name="U$24" library="SUPPLY" deviceset="+12V" device=""/>
@@ -891,9 +891,9 @@ Based on the previous libraries:
 <instance part="U$18" gate="1" x="124.46" y="106.68"/>
 <instance part="+12V" gate="1" x="30.48" y="185.42" rot="R180"/>
 <instance part="U$20" gate="1" x="124.46" y="119.38" rot="R180"/>
-<instance part="LED_DRIVER_2" gate="G$1" x="198.12" y="152.4"/>
-<instance part="LED_DRIVER_1" gate="G$1" x="198.12" y="111.76"/>
-<instance part="LED_DRIVER_3" gate="G$1" x="198.12" y="71.12"/>
+<instance part="TREIBER_2" gate="G$1" x="198.12" y="152.4"/>
+<instance part="TREIBER_1" gate="G$1" x="198.12" y="111.76"/>
+<instance part="TREIBER_3" gate="G$1" x="198.12" y="71.12"/>
 <instance part="U$22" gate="1" x="220.98" y="162.56" rot="R180"/>
 <instance part="U$23" gate="1" x="220.98" y="121.92" rot="R180"/>
 <instance part="U$24" gate="1" x="220.98" y="81.28" rot="R180"/>
@@ -984,12 +984,12 @@ Based on the previous libraries:
 <wire x1="73.66" y1="33.02" x2="66.04" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED_DRIVER_3" gate="G$1" pin="-VIN"/>
+<pinref part="TREIBER_3" gate="G$1" pin="-VIN"/>
 <pinref part="U$26" gate="1" pin="GND"/>
 <wire x1="208.28" y1="63.5" x2="220.98" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED_DRIVER_2" gate="G$1" pin="-VIN"/>
+<pinref part="TREIBER_2" gate="G$1" pin="-VIN"/>
 <pinref part="U$31" gate="1" pin="GND"/>
 <wire x1="220.98" y1="144.78" x2="208.28" y2="144.78" width="0.1524" layer="91"/>
 </segment>
@@ -1002,7 +1002,7 @@ Based on the previous libraries:
 <wire x1="30.48" y1="160.02" x2="30.48" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED_DRIVER_1" gate="G$1" pin="-VIN"/>
+<pinref part="TREIBER_1" gate="G$1" pin="-VIN"/>
 <pinref part="U$27" gate="1" pin="GND"/>
 <wire x1="208.28" y1="104.14" x2="220.98" y2="104.14" width="0.1524" layer="91"/>
 </segment>
@@ -1083,17 +1083,17 @@ Based on the previous libraries:
 </net>
 <net name="+12V" class="0">
 <segment>
-<pinref part="LED_DRIVER_2" gate="G$1" pin="+VIN"/>
+<pinref part="TREIBER_2" gate="G$1" pin="+VIN"/>
 <pinref part="U$22" gate="1" pin="+12V"/>
 <wire x1="220.98" y1="160.02" x2="208.28" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED_DRIVER_1" gate="G$1" pin="+VIN"/>
+<pinref part="TREIBER_1" gate="G$1" pin="+VIN"/>
 <pinref part="U$23" gate="1" pin="+12V"/>
 <wire x1="208.28" y1="119.38" x2="220.98" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED_DRIVER_3" gate="G$1" pin="+VIN"/>
+<pinref part="TREIBER_3" gate="G$1" pin="+VIN"/>
 <pinref part="U$24" gate="1" pin="+12V"/>
 <wire x1="208.28" y1="78.74" x2="220.98" y2="78.74" width="0.1524" layer="91"/>
 </segment>
@@ -1110,7 +1110,7 @@ Based on the previous libraries:
 </net>
 <net name="DIMMER_2" class="0">
 <segment>
-<pinref part="LED_DRIVER_2" gate="G$1" pin="DIMM"/>
+<pinref part="TREIBER_2" gate="G$1" pin="DIMM"/>
 <wire x1="190.5" y1="152.4" x2="185.42" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="D6" gate="G$1" pin="TP_13"/>
 <wire x1="185.42" y1="152.4" x2="182.88" y2="149.86" width="0.1524" layer="91"/>
@@ -1121,7 +1121,7 @@ Based on the previous libraries:
 </net>
 <net name="DIMMER_3" class="0">
 <segment>
-<pinref part="LED_DRIVER_3" gate="G$1" pin="DIMM"/>
+<pinref part="TREIBER_3" gate="G$1" pin="DIMM"/>
 <wire x1="190.5" y1="71.12" x2="185.42" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="D10" gate="G$1" pin="TP_13"/>
 <wire x1="185.42" y1="71.12" x2="182.88" y2="73.66" width="0.1524" layer="91"/>
@@ -1134,7 +1134,7 @@ Based on the previous libraries:
 <segment>
 <pinref part="D9" gate="G$1" pin="TP_13"/>
 <wire x1="170.18" y1="111.76" x2="190.5" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="LED_DRIVER_1" gate="G$1" pin="DIMM"/>
+<pinref part="TREIBER_1" gate="G$1" pin="DIMM"/>
 </segment>
 </net>
 <net name="RESERVE_2" class="0">
@@ -1183,7 +1183,7 @@ Based on the previous libraries:
 </net>
 <net name="-VOUT_1" class="0">
 <segment>
-<pinref part="LED_DRIVER_1" gate="G$1" pin="-VOUT"/>
+<pinref part="TREIBER_1" gate="G$1" pin="-VOUT"/>
 <pinref part="STECKER" gate="-12" pin="1"/>
 <wire x1="208.28" y1="109.22" x2="220.98" y2="109.22" width="0.1524" layer="91"/>
 </segment>
@@ -1197,35 +1197,35 @@ Based on the previous libraries:
 </net>
 <net name="+VOUT_1" class="0">
 <segment>
-<pinref part="LED_DRIVER_1" gate="G$1" pin="+VOUT"/>
+<pinref part="TREIBER_1" gate="G$1" pin="+VOUT"/>
 <pinref part="STECKER" gate="-11" pin="1"/>
 <wire x1="208.28" y1="114.3" x2="220.98" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="-VOUT_2" class="0">
 <segment>
-<pinref part="LED_DRIVER_2" gate="G$1" pin="-VOUT"/>
+<pinref part="TREIBER_2" gate="G$1" pin="-VOUT"/>
 <pinref part="STECKER" gate="-10" pin="1"/>
 <wire x1="218.44" y1="149.86" x2="208.28" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+VOUT_2" class="0">
 <segment>
-<pinref part="LED_DRIVER_2" gate="G$1" pin="+VOUT"/>
+<pinref part="TREIBER_2" gate="G$1" pin="+VOUT"/>
 <pinref part="STECKER" gate="-9" pin="1"/>
 <wire x1="220.98" y1="154.94" x2="208.28" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="-VOUT_3" class="0">
 <segment>
-<pinref part="LED_DRIVER_3" gate="G$1" pin="-VOUT"/>
+<pinref part="TREIBER_3" gate="G$1" pin="-VOUT"/>
 <pinref part="STECKER" gate="-7" pin="1"/>
 <wire x1="208.28" y1="68.58" x2="220.98" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+VOUT_3" class="0">
 <segment>
-<pinref part="LED_DRIVER_3" gate="G$1" pin="+VOUT"/>
+<pinref part="TREIBER_3" gate="G$1" pin="+VOUT"/>
 <pinref part="STECKER" gate="-6" pin="1"/>
 <wire x1="208.28" y1="73.66" x2="220.98" y2="73.66" width="0.1524" layer="91"/>
 </segment>

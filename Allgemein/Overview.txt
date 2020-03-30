@@ -11,35 +11,23 @@ Blinker: 2 Strips a 6 LEDs     Jeder Strip zieht 0.1 A   insg. 0.2 A = 2,4W
 
 
 === ToDo ===
-- Welche Pins vom Atmel verwenden?
+	- Welche Pins vom Atmel verwenden? --- done
 - Sicherung 12V
-- Phönix-Stecker raussuchen
-
-- Alle Arduino Pins auf die Platine führen
-- Dicke Versorgung
-- Stimmen die Löcher vom LED-Treiber? --- ja! 0,6mmDurchmesser -> Loch: 1,4mm
-- Abstand Optokoppler - Arduino?
+	- Phönix-Stecker raussuchen --- done
+	- Alle Arduino Pins auf die Platine führen --- done
+	- Dicke Versorgung --- done
+	- Stimmen die Löcher vom LED-Treiber? --- ja! 0,6mmDurchmesser -> Loch: 1,4mm
+	- Abstand Optokoppler - Arduino? --- done
  
 
 
-
+Arduino Pins:
 https://botland.com.pl/en/arduino-nano-series-original-tiles/14760-arduino-nano-every-module-abx00028-7630049201477.html
 
+
+
 Stückliste:
-- RS
-
-- Bürklin
-
-
-- Farnell
-
-
-- Reichelt
-
-Artikel-Nr.: MW LDD-600H			MW LDD-600H LED-Trafo, 9 - 56 V, 600 mA
-
-- Völkner
-
+siehe xls
 
 
 
