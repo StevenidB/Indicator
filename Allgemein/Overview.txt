@@ -13,6 +13,7 @@ Blinker: 2 Strips a 6 LEDs     Jeder Strip zieht 0.1 A   insg. 0.2 A = 2,4W
 === ToDo ===
 	- Welche Pins vom Atmel verwenden? --- done
 - Sicherung 12V
+	E1207 Buerklin 64G6061 !!!!!! 5er Raster ok ??
 	- Phönix-Stecker raussuchen --- done
 	- Alle Arduino Pins auf die Platine führen --- done
 	- Dicke Versorgung --- done

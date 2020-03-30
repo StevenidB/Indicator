@@ -91,7 +91,6 @@
 <text x="67.31" y="41.91" size="1.778" layer="21">SW &amp; SW</text>
 <text x="67.31" y="38.735" size="1.778" layer="21">Date:</text>
 <text x="67.31" y="35.56" size="1.778" layer="21">01.04.20</text>
-<text x="48.26" y="66.04" size="1.778" layer="21">Arduino Nano Every</text>
 </plain>
 <libraries>
 <library name="SUPPLY">
@@ -545,7 +544,7 @@ design rules under a new name.</description>
 <element name="D10" library="SUPPLY" package="TP_10" value="TP_10&quot;" x="71.12" y="63.5"/>
 <element name="TESTPUNKT" library="SUPPLY" package="TP_10" value="TP_10&quot;" x="43.18" y="43.18"/>
 <element name="OPTOKOPPLER" library="optocoupler" package="DIL16" value="ILQ620" x="31.75" y="53.34" smashed="yes" rot="R270">
-<attribute name="NAME" x="23.495" y="65.786" size="1.778" layer="25" ratio="10"/>
+<attribute name="NAME" x="21.59" y="65.151" size="1.778" layer="25" ratio="10"/>
 <attribute name="VALUE" x="30.861" y="57.15" size="1.778" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="R6" library="R-C" package="R-10" value="2,2k" x="17.78" y="36.83" smashed="yes" rot="R180">
@@ -561,7 +560,7 @@ design rules under a new name.</description>
 <attribute name="MPN" value="1757349" x="1.27" y="34.29" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="1.27" y="34.29" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="3705250" x="1.27" y="34.29" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="2.159" y="66.04" size="1.778" layer="25" ratio="10"/>
+<attribute name="NAME" x="0.254" y="66.04" size="1.778" layer="25" ratio="10"/>
 <attribute name="VALUE" x="1.27" y="64.77" size="1.778" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="D2" library="LED" package="THT3MM" value="THT3MM" x="55.88" y="43.18" smashed="yes" rot="R90">
