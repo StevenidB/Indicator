@@ -20,6 +20,12 @@ Blinker: 2 Strips a 6 LEDs     Jeder Strip zieht 0.1 A   insg. 0.2 A = 2,4W
 	- Stimmen die Löcher vom LED-Treiber? --- ja! 0,6mmDurchmesser -> Loch: 1,4mm
 	- Abstand Optokoppler - Arduino? --- done
  
+	- Sicherung weiter weg von Leiterbahnen auf BS
+	- Ecken auf LS markieren
+	
+
+
+
 
 
 Arduino Pins:
