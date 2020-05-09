@@ -1112,7 +1112,6 @@ Source: http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da
 <part name="S1" library="switch" deviceset="TL32PO" device=""/>
 <part name="S2" library="switch" deviceset="TL32PO" device=""/>
 <part name="U$1" library="SUPPLY" deviceset="TP_10" device="&quot;"/>
-<part name="U$5" library="SUPPLY" deviceset="TP_10" device="&quot;"/>
 </parts>
 <sheets>
 <sheet>
@@ -1233,7 +1232,6 @@ Source: http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da
 <instance part="S1" gate="BEF1" x="27.94" y="22.86" rot="R270"/>
 <instance part="S2" gate="BEF1" x="17.78" y="22.86" rot="R270"/>
 <instance part="U$1" gate="G$1" x="279.4" y="76.2" rot="R90"/>
-<instance part="U$5" gate="G$1" x="157.48" y="132.08" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -1241,16 +1239,12 @@ Source: http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da
 <net name="GND" class="0">
 <segment>
 <pinref part="U$18" gate="1" pin="GND"/>
-<wire x1="132.08" y1="127" x2="132.08" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="GND_2" gate="G$1" pin="TP_13"/>
-<wire x1="154.94" y1="132.08" x2="132.08" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="132.08" x2="132.08" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="127" x2="132.08" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="137.16" x2="139.7" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="GND_1" gate="G$1" pin="TP_13"/>
 <wire x1="139.7" y1="127" x2="132.08" y2="127" width="0.1524" layer="91"/>
 <junction x="132.08" y="127"/>
-<pinref part="U$5" gate="G$1" pin="TP_13"/>
-<junction x="154.94" y="132.08"/>
 </segment>
 <segment>
 <pinref part="LED_DRIVER_1" gate="G$1" pin="-VIN"/>
