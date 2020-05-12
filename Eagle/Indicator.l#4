@@ -94,7 +94,7 @@
 <wire x1="-15.24" y1="-12.7" x2="-15.24" y2="22.86" width="0.254" layer="94"/>
 <pin name="VDD" x="-17.78" y="15.24" length="short" direction="pwr"/>
 <pin name="GND" x="-17.78" y="-5.08" length="short" direction="pas"/>
-<pin name="X-OUT" x="25.4" y="15.24" length="short" direction="out" rot="R180"/>
+<pin name="X-OUT" x="25.4" y="15.24" visible="pin" length="short" direction="out" rot="R180"/>
 <pin name="Y-OUT" x="25.4" y="10.16" length="short" direction="out" rot="R180"/>
 <pin name="Z-OUT" x="25.4" y="5.08" length="short" direction="out" rot="R180"/>
 <text x="-2.54" y="10.16" size="1.27" layer="95">&gt;Name</text>
@@ -102,6 +102,25 @@
 </symbol>
 </symbols>
 <devicesets>
+<deviceset name="GY-61">
+<gates>
+<gate name="G$1" symbol="GY-61" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="GY-61">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="VDD" pad="VDD"/>
+<connect gate="G$1" pin="X-OUT" pad="X-OUT"/>
+<connect gate="G$1" pin="Y-OUT" pad="Y-OUT"/>
+<connect gate="G$1" pin="Z-OUT" pad="Z-OUT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>

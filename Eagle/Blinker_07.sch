@@ -1004,11 +1004,11 @@ Based on the previous libraries:
 <wire x1="-17.78" y1="7.62" x2="-17.78" y2="-7.62" width="0.127" layer="21"/>
 <wire x1="-17.78" y1="-7.62" x2="2.54" y2="-7.62" width="0.127" layer="21"/>
 <wire x1="2.54" y1="-7.62" x2="2.54" y2="7.62" width="0.127" layer="21"/>
-<pad name="Y-OUT" x="0" y="0" drill="0.8"/>
-<pad name="X-OUT" x="0" y="2.54" drill="0.8"/>
-<pad name="VDD" x="0" y="5.08" drill="0.8"/>
-<pad name="Z-OUT" x="0" y="-2.54" drill="0.8"/>
-<pad name="GND" x="0" y="-5.08" drill="0.8"/>
+<pad name="Y-OUT" x="0" y="0" drill="0.9"/>
+<pad name="X-OUT" x="0" y="2.54" drill="0.9"/>
+<pad name="VDD" x="0" y="5.08" drill="0.9"/>
+<pad name="Z-OUT" x="0" y="-2.54" drill="0.9"/>
+<pad name="GND" x="0" y="-5.08" drill="0.9"/>
 <pad name="P$6" x="-15.24" y="5.08" drill="3.2"/>
 <pad name="P$7" x="-15.24" y="-5.08" drill="3.2"/>
 <text x="-10.16" y="2.54" size="1.27" layer="25">&gt;Name</text>
@@ -1017,17 +1017,17 @@ Based on the previous libraries:
 </packages>
 <symbols>
 <symbol name="GY-61">
-<wire x1="-6.35" y1="7.62" x2="11.43" y2="7.62" width="0.254" layer="94"/>
-<wire x1="11.43" y1="7.62" x2="11.43" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="11.43" y1="-7.62" x2="-6.35" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-6.35" y1="-7.62" x2="-6.35" y2="7.62" width="0.254" layer="94"/>
-<pin name="VDD" x="-8.89" y="2.54" visible="pin" length="short" direction="sup"/>
-<pin name="GND" x="-8.89" y="-2.54" visible="pin" length="short" direction="sup"/>
-<pin name="X-OUT" x="13.97" y="5.08" visible="pin" length="short" direction="out" rot="R180"/>
-<pin name="Y-OUT" x="13.97" y="0" visible="pin" length="short" direction="out" rot="R180"/>
-<pin name="Z-OUT" x="13.97" y="-5.08" visible="pin" length="short" direction="out" rot="R180"/>
-<text x="-3.81" y="8.89" size="1.27" layer="95">&gt;Name</text>
-<text x="5.08" y="8.89" size="1.27" layer="96">&gt;Value</text>
+<wire x1="-7.62" y1="7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<pin name="VDD" x="-10.16" y="2.54" length="short" direction="sup"/>
+<pin name="GND" x="-10.16" y="-2.54" length="short" direction="sup"/>
+<pin name="X-OUT" x="15.24" y="5.08" length="short" direction="out" rot="R180"/>
+<pin name="Y-OUT" x="15.24" y="0" length="short" direction="out" rot="R180"/>
+<pin name="Z-OUT" x="15.24" y="-5.08" length="short" direction="out" rot="R180"/>
+<text x="-5.08" y="10.16" size="1.27" layer="95">&gt;Name</text>
+<text x="5.08" y="10.16" size="1.27" layer="96">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1260,7 +1260,7 @@ Based on the previous libraries:
 <instance part="U$5" gate="1" x="130.81" y="53.34"/>
 <instance part="+3V1" gate="G$1" x="129.54" y="83.82"/>
 <instance part="+3V2" gate="G$1" x="130.81" y="62.23"/>
-<instance part="U1" gate="G$1" x="142.24" y="55.88"/>
+<instance part="U1" gate="G$1" x="144.78" y="55.88"/>
 </instances>
 <busses>
 </busses>
@@ -1342,7 +1342,7 @@ Based on the previous libraries:
 <segment>
 <pinref part="U$5" gate="1" pin="GND"/>
 <pinref part="U1" gate="G$1" pin="GND"/>
-<wire x1="130.81" y1="53.34" x2="133.35" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="130.81" y1="53.34" x2="134.62" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -1616,7 +1616,7 @@ Based on the previous libraries:
 <pinref part="U$56" gate="G$1" pin="TP_13"/>
 <wire x1="161.29" y1="76.2" x2="161.29" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="X-OUT"/>
-<wire x1="161.29" y1="60.96" x2="156.21" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="161.29" y1="60.96" x2="160.02" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -1624,14 +1624,14 @@ Based on the previous libraries:
 <pinref part="U$49" gate="G$1" pin="TP_13"/>
 <wire x1="166.37" y1="76.2" x2="166.37" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="Y-OUT"/>
-<wire x1="166.37" y1="55.88" x2="156.21" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="166.37" y1="55.88" x2="160.02" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
 <segment>
 <pinref part="U$48" gate="G$1" pin="TP_13"/>
 <pinref part="U1" gate="G$1" pin="Z-OUT"/>
-<wire x1="156.21" y1="50.8" x2="171.45" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="50.8" x2="171.45" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="171.45" y1="50.8" x2="171.45" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -1640,7 +1640,7 @@ Based on the previous libraries:
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
 <wire x1="130.81" y1="59.69" x2="130.81" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="VDD"/>
-<wire x1="130.81" y1="58.42" x2="133.35" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="130.81" y1="58.42" x2="134.62" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="TP_13"/>
